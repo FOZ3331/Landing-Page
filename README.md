@@ -1,0 +1,1 @@
+Welcome to the Landing-Page repository! This project contains the source code for a responsive single-page landing website for Pristine Detergents, showcasing a clean design and promotional materials for the brand’s product line.

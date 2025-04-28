@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pristine Detergents</title>
+    <meta name="description"        
+        content="Discover Pristine Power detergents for a complete cleaning solution. Explore our range of products for all your cleaning needs.">
+    <link rel="canonical" href="https://yourwebsite.com/">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="normalize.css">  
+    <link rel="stylesheet" href="additional-styles.css"> 
+    <link rel="stylesheet" href="responsive.css">
+    <script src="script.js" defer></script>
+        <style>
+        :root {
+
+            --primary-color: #4CAF50;
+            --text-color: #333;
+            --background-color: #fff;
+            --secondary-color: #008C76;
+
+        }
+
+
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            line-height: 1.6;
+            padding: 1rem;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            /* Make header a positioning context */
+
+        }
+
+        header .logo {
+
+            font-size: 1.5rem;
+
+            font-weight: bold;
+
+        }
+
+        header .logo a {
+
+            color: white;
+
+            text-decoration: none;
+
+        }
+
+        header .logo a:hover {
+            text-decoration: underline;
+        }
+
+
+
+        header .logo a:hover {
+
+            text-decoration: underline;
+
+        }
+
+        nav ul {
+
+            list-style: none;
+
+            padding: 0;
+
+            display: flex;
+
+            justify-content: center;
+
+            margin: 0;
+
+        }
+
+
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+
+            color: white;
+
+            text-decoration: none;
+
+            font-weight: 500;
+
+            transition: color 0.3s ease;
+            text-transform: uppercase;
+        }
+
+        nav ul li a:hover {
+
+            text-decoration: underline;
+
+        }
+
+
+        nav ul li a:focus {
+            outline: 2px solid var(--secondary-color);
+        }
+
+        h1,
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+
+            font-size: 2.5rem;
+
+        }
+
+
+
+        h2 {
+
+            font-size: 2rem;
+
+        }
+
+        p {
+            font-size: 1.2rem;
+
+            line-height: 1.5;
+
+            margin-bottom: 1rem;
+        }
+
+        .hero-section {
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding: 4rem 1rem;
+
+            background-color: #f0f0f0;
+
+            text-align: center;
+
+        }
+
+
+
+        .hero-content {
+
+            max-width: 600px;
+
+        }
+
+
+
+        .hero-content h1 {
+
+            font-size: 3rem;
+
+            margin-bottom: 1.2rem;
+
+        }
+
+
+
+        .hero-content p {
+
+            font-size: 1.4rem;
+
+        }
+
+
+
+        .cta-button {
+
+            background-color: var(--primary-color);
+
+            color: white;
+
+            padding: 0.75rem 1.5rem;
+
+            border: none;
+
+            border-radius: 5px;
+
+            font-size: 1rem;
+
+            cursor: pointer;
+
+            transition: background-color 0.3s ease;
+
+            margin-top: 1.5rem;
+
+        }
+
+
+
+        .cta-button:hover {
+
+            background-color: #45a049;
+
+        }
+
+
+
+        .language-button {
+
+            background-color: var(--secondary-color);
+
+            color: white;
+
+            padding: 0.5rem 1rem;
+
+            border: none;
+
+            border-radius: 5px;
+
+            font-size: 0.9rem;
+
+            cursor: pointer;
+
+            transition: background-color 0.3s ease;
+
+            margin-top: 1rem;
+
+            margin-left: 1rem;
+
+            position: absolute;
+
+            /* Position absolutely within header */
+
+            top: 1rem;
+
+            /* Position at the top */
+
+            right: 1rem;
+
+            /* Position at the right */
+
+        }
+
+
+
+        .language-button:hover {
+
+            background-color: #00796b;
+
+        }
+
+
+
+        .hero-image img {
+
+            max-width: 40%;
+            /* Adjust the size of the image as needed */
+            height: auto;
+
+            border-radius: 0.5rem;
+
+            box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+
+            margin-top: 2rem;
+
+        }
+
+
+
+        #about,
+        #product,
+        #testimonials,
+        #contact {
+            padding: 4rem 1rem;
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            /* Add a background color for better visibility */
+            background-color: var(--background-color);
+        }
+
+        #about h2,
+
+        #product h2,
+
+        #testimonials h2,
+
+        #contact h2 {
+
+            font-size: 2.25rem;
+
+            margin-bottom: 1.5rem;
+
+        }
+
+
+
+        footer {
+
+            background-color: var(--primary-color);
+
+            color: white;
+
+            text-align: center;
+
+            padding: 1rem;
+
+            margin-top: 2rem;
+
+            font-size: 0.9rem;
+
+        }
+
+
+
+        footer a {
+
+            color: white;
+
+            text-decoration: none;
+
+        }
+
+
+
+        footer a:hover {
+
+            text-decoration: underline;
+
+        }
+
+
+
+        @media (max-width: 768px) {
+
+            header {
+
+                flex-direction: column;
+
+            }
+
+
+
+            header nav ul {
+
+                flex-direction: column;
+
+                align-items: center;
+
+            }
+
+
+
+            header nav ul li {
+
+                margin: 0.5rem 0;
+
+            }
+
+
+
+            .hero-section {
+
+                flex-direction: column;
+
+            }
+
+
+
+            .hero-content {
+
+                width: 100%;
+
+                text-align: center;
+
+            }
+
+
+
+            .hero-content h1 {
+
+                font-size: 2.5rem;
+
+            }
+
+
+
+            .hero-content p {
+
+                font-size: 1.2rem;
+
+            }
+
+
+
+            .hero-image img {
+
+                margin-top: 1rem;
+
+            }
+
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .product-item {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+        }
+
+        .product-item img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+
+        .product-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        .product-item p {
+            font-size: 1rem;
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+
+        <header>
+
+                <div class="logo">
+                        <a href="/">Pristine Power</a>
+                    </div>
+                <nav>
+                        <ul>
+
+                                <li><a href="#features">Features</a></li>
+
+                                <li><a href="#about">About</a></li>
+
+                                <li><a href="#product">Product</a></li>
+
+                                <li><a href="#testimonials">Testimonials</a></li>
+
+                                <li><a href="#contact">Contact Us</a></li>
+
+                            </ul>
+
+                    </nav>
+
+                <button class="language-button" onclick="toggleLanguage()">Kiswahili</button>
+
+            </header>
+
+
+
+        <main>
+
+                <section id="features" class="hero-section">
+
+                        <div class="hero-content">
+
+                                <h1>Welcome to Pristine Detergents</h1>
+
+                                <p>Pristine Power: Your complete cleaning solution.</p>
+
+                               <button class="cta-button" onclick="goToProducts()">View Our Products</button>
+
+
+                            </div>
+
+                        <div class="hero-image">
+
+                                <img src="Images/logo.png" alt="Pristine Detergent Products">
+
+                                <picture>
+
+                                       
+                    <source srcset="images/logo.webp" type="image/webp">
+
+                                       
+                    <source srcset="images/logo.jpg" type="image/jpeg">
+                               
+                </picture>
+
+                                <picture>
+
+                                       
+                    <source srcset="images/detergent-hero.webp" type="image/webp">
+
+                                       
+                    <source srcset="images/detergent-hero.jpg" type="image/jpeg">
+
+                                   
+                </picture>
+
+                            </div>
+
+                    </section>
+
+
+
+                <section id="about">
+
+                        <h2>About Us</h2>
+
+                        <p>Learn more about Pristine Detergents and our mission to provide high-quality, eco-friendly
+                cleaning
+                           
+        </section>
+        <section id="product">
+                        <h2>Our Products</h2>
+            <ul>
+
+                                <li>
+                                        <img src="Images/washing powder.png" alt="Pristine Power Laundry Detergent" />
+                                        <span>Pristine Power Laundry Detergent</span>
+                                    </li>
+
+                                <li>
+                                        <img src="Images/Dish liquid.png" alt="Pristine Power Dish Soap" />
+                                        <span>Pristine Power Dish Soap</span>
+                                    </li>
+
+                                <li>
+                                        <img src="Images/All purpose cleaner.png"
+                        alt="Pristine Power All-Purpose Cleaner" />
+                                        <span>Pristine Power All-Purpose Cleaner</span>
+                                    </li>
+                            </ul>
+
+                                <img src="Images/Dish liquid.png" alt="Pristine Power Dish Soap" />
+
+                                <span>Pristine Power Dish Soap</span>
+
+                            </li>
+
+                            <li>
+
+                                    <img src="Images/All purpose cleaner.png"
+                    alt="Pristine Power All-Purpose Cleaner" />
+
+                                    <span>Pristine Power All-Purpose Cleaner</span>
+
+                                </li>
+
+                        </ul>
+
+                   
+
+
+                    <section id="testimonials">
+
+                            <h2>Testimonials</h2>
+
+                            <p>See what our customers are saying about the effectiveness and quality of Pristine
+                    Detergents.
+                </p>
+
+                            <blockquote>
+
+                                    <p>"I love how clean and fresh my clothes are with Pristine Power!"</p>
+
+                                    <p>- Happy Customer 1</p>
+
+                                </blockquote>
+
+                        </section>
+
+
+
+                    <section id="contact">
+
+                            <h2>Contact Us</h2>
+
+                            <p>Have questions? Contact us for more information or to find a retailer near you.</p>
+
+                            <p>Email: info@pristinedetergents.com</p>
+
+                            <p>Phone: +123 456 7890</p>
+
+                        </section>
+
+               
+    </main>
+
+
+
+        <footer>
+
+                <p>&copy; 2025 Pristine Detergents. All rights reserved.</p>
+
+            </footer>
+
+
+
+       
+    <script>
+
+        let currentLanguage = 'english';
+
+
+
+        function toggleLanguage() {
+
+            const swahiliElements = document.querySelectorAll('.swahili');
+
+            const englishElements = document.querySelectorAll('.english');
+
+            const h1Elements = document.querySelectorAll('h1');
+
+            const h2Elements = document.querySelectorAll('h2');
+
+            const pElements = document.querySelectorAll('p');
+
+            const liElements = document.querySelectorAll('li');
+
+            const blockquoteElements = document.querySelectorAll('blockquote');
+
+            const ctaButton = document.querySelector('.cta-button');
+
+            const languageButton = document.querySelector('.language-button');
+
+
+
+
+
+            if (currentLanguage === 'english') {
+
+                currentLanguage = 'swahili';
+
+                document.documentElement.lang = 'sw';
+
+                languageButton.textContent = 'English';
+
+
+
+                h1Elements[0].textContent = "Karibu kwenye Pristine Detergents";
+
+                pElements[0].textContent = "Pristine Power: Suluhisho lako kamili la usafi.";
+
+                h2Elements[0].textContent = "Kuhusu Sisi";
+
+                pElements[1].textContent = "Jifunze zaidi kuhusu Pristine Detergents na dhamira yetu ya kutoa suluhisho za usafi za hali ya juu na rafiki kwa mazingira. Tumejitolea kwa usafi wenye nguvu ambao ni salama kwa nyumba yako na mazingira.";
+
+                h2Elements[1].textContent = "Bidhaa Zetu";
+
+                pElements[2].textContent = "Gundua anuwai ya sabuni zetu, kila moja ikiwa imeundwa kwa mahitaji maalum:";
+
+                liElements[0].textContent = "Pristine Power Sabuni ya Kufulia";
+
+                liElements[1].textContent = "Pristine Power Sabuni ya Vyombo";
+
+                liElements[2].textContent = "Pristine Power Kisafisha Madhumuni Yote";
+
+                h2Elements[2].textContent = "Ushuhuda";
+
+                pElements[3].textContent = "Angalia wateja wetu wanasema nini kuhusu ufanisi na ubora wa Pristine Detergents.";
+
+                blockquoteElements[0].querySelector('p').textContent = '"Ninapenda jinsi nguo zangu zilivyo safi na safi kwa Pristine Power!"';
+
+                h2Elements[3].textContent = "Wasiliana Nasi";
+
+                pElements[4].textContent = "Una maswali? Wasiliana nasi kwa habari zaidi au kupata muuzaji karibu nawe.";
+
+                pElements[5].textContent = "Email: info@pristinedetergents.com";
+
+                pElements[6].textContent = "Simu: +123 456 7890";
+
+                footer = document.querySelector('footer p');
+
+                footer.textContent = "&copy; 2025 Pristine Detergents. Haki zote zimehifadhiwa.";
+
+                ctaButton.textContent = "Anza";
+
+
+
+            } else {
+
+                currentLanguage = 'english';
+
+                document.documentElement.lang = 'en';
+
+                languageButton.textContent = 'Kiswahili';
+
+
+
+                h1Elements[0].textContent = "Welcome to Pristine Detergents";
+
+                pElements[0].textContent = "Pristine Power: Your complete cleaning solution.";
+
+                h2Elements[0].textContent = "About Us";
+
+                pElements[1].textContent = "Learn more about Pristine Detergents and our mission to provide high-quality, eco-friendly cleaning solutions. We are dedicated to powerful cleaning that's safe for your home and the environment.";
+
+                h2Elements[1].textContent = "Our Products";
+
+                pElements[2].textContent = "Discover our range of detergents, each formulated for specific needs:";
+
+                liElements[0].textContent = "Pristine Power Laundry Detergent";
+
+                liElements[1].textContent = "Pristine Power Dish Soap";
+
+                liElements[2].textContent = "Pristine Power All-Purpose Cleaner";
+
+                h2Elements[2].textContent = "Testimonials";
+
+                pElements[3].textContent = "See what our customers are saying about the effectiveness and quality of Pristine Detergents.";
+
+                blockquoteElements[0].querySelector('p').textContent = '"I love how clean and fresh my clothes are with Pristine Power!"';
+
+                h2Elements[3].textContent = "Contact Us";
+
+                pElements[4].textContent = "Have questions? Contact us for more information or to find a retailer near you.";
+
+                pElements[5].textContent = "Email: info@pristinedetergents.com";
+
+                pElements[6].textContent = "Phone: +123 456 7890";
+
+                footer = document.querySelector('footer p');
+
+                footer.textContent = "&copy; 2025 Pristine Detergents. All rights reserved.";
+
+                ctaButton.textContent = "Get Started";
+
+            }
+
+        }
+
+    </script>
+
+</body>
